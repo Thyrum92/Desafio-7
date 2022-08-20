@@ -1,4 +1,4 @@
-/*** Grids Index ***/
+/*** Grids ***/
 
 $naranjaOscuro: darkorange;
 $rojoOscuro: darkred;
@@ -391,26 +391,25 @@ $bordeNegro: black;
 #promociones {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 10%;
+    grid-template-rows: 10%;
     grid-area: promociones;
 }
 #beneficios {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 10%;
+    grid-template-rows: 10%;
     grid-area: beneficios;
 }
 
 #newLetter {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 15% 15% 15% 15%;
+    grid-template-rows: 15%;
     grid-area: newLetter;
 }
 #grid {
     display: grid;
     grid-template-areas:
-    "promociones beneficios newLetter"
     "promociones beneficios newLetter"
     ;
     justify-items: center;

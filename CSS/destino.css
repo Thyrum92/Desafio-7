@@ -1,16 +1,346 @@
+/* Reseteo */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700&display=swap");
-h1 h2 {
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0%;
+  padding: 0;
+}
+
+/** Estructura **/
+@media (min-width: 360px) and (max-width: 599px) {
+  /*** General - Header ***/
+  .caja {
+    margin: 0 15px 0 0;
+    width: 100%;
+    height: 100%;
+  }
+  .cajaSub {
+    margin: 10px 0 0 50px;
+  }
+  .sinPunto {
+    list-style-type: none;
+    font-size: 12px;
+  }
+  .borde {
+    border: solid 3px;
+    border-radius: 3px;
+  }
+  /* Main - Index */
+  .boxLi {
+    border: solid black;
+    border-radius: 3px;
+    color: yellowgreen;
+    width: 100px;
+    padding: 10px 0 10px 0;
+    margin: 5px 0 5px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+  .marginNew {
+    margin: 10px;
+  }
+  /*** productos ***/
+  .divM {
+    margin: 10px 0 0 30px;
+  }
+  /*** Productos Sin Tacc ***/
+  .divM {
+    margin: 30px;
+  }
+  .center {
+    text-align: center;
+    padding: 0 0 30px 0;
+  }
+  .marginFlex {
+    margin: 0 0 0 5px;
+  }
+  /*** Contacto ***/
+  .marginNa {
+    margin: 0 0 0 50px;
+  }
+  .marginE {
+    margin: 0 0 0 67px;
+  }
+  .marginC {
+    margin: -18px 0 0 115px;
+  }
+  .marginB {
+    margin: 15px 0 0 50px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1199px) {
+  /*** General - Header ***/
+  .caja {
+    margin: 0 15px 0 0;
+    width: 100%;
+    height: 100%;
+  }
+  .cajaSub {
+    margin: 10px 0 0 50px;
+  }
+  .sinPunto {
+    list-style-type: none;
+    font-size: 12px;
+  }
+  .borde {
+    border: solid 3px;
+    border-radius: 3px;
+  }
+  /* Main - Index */
+  .boxLi {
+    border: solid black;
+    border-radius: 3px;
+    color: yellowgreen;
+    width: 100px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+  .marginNew {
+    margin: 10px;
+  }
+  /*** productos ***/
+  .divM {
+    margin: 10px 0 0 30px;
+  }
+  /*** Productos Sin Tacc ***/
+  .divM {
+    margin: 30px;
+  }
+  .center {
+    text-align: center;
+    padding: 0 0 30px 0;
+  }
+  .marginFlex {
+    margin: 0 0 0 5px;
+  }
+  /*** Contacto ***/
+  .marginNa {
+    margin: 0 0 0 50px;
+  }
+  .marginE {
+    margin: 0 0 0 67px;
+  }
+  .marginC {
+    margin: -18px 0 0 115px;
+  }
+  .marginB {
+    margin: 15px 0 0 50px;
+  }
+  .backDiv {
+    background-color: darkorange;
+  }
+}
+@media (min-width: 1200px) {
+  /*** General - Header ***/
+  .caja {
+    margin: 0 15px 0 0;
+    width: 100%;
+    height: 100%;
+    text-shadow: 2px 2px 2px black;
+  }
+  .cajaSub {
+    margin: 10px 0 0 100px;
+  }
+  .sinPunto {
+    list-style-type: none;
+  }
+  .borde {
+    border: solid 3px;
+    border-radius: 3px;
+  }
+  /* Main - Index */
+  .boxLi {
+    border: solid black;
+    border-radius: 3px;
+    color: yellowgreen;
+    font-style: 1.5rem;
+    width: 150px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+  }
+  .marginNew {
+    margin: 10px;
+  }
+  /*** productos ***/
+  .divM {
+    margin: 10px 0 0 60px;
+  }
+  /*** Productos Sin Tacc ***/
+  .divM {
+    margin: 30px;
+  }
+  .center {
+    text-align: center;
+  }
+  .marginFlex {
+    margin: 0 0 0 5px;
+  }
+  /*** Contacto ***/
+  .marginNa {
+    margin: 0 0 0 50px;
+  }
+  .marginE {
+    margin: 0 0 0 67px;
+  }
+  .marginC {
+    margin: -18px 0 0 116px;
+  }
+  .marginB {
+    margin: 15px 0 0 50px;
+  }
+  /*** Quienes Somos ***/
+  .marginP1 {
+    margin: 45px 0 10px 45px;
+  }
+  .marginP2 {
+    margin: 100px 0 45px 45px;
+  }
+}
+/** Imagenes **/
+@media (min-width: 360px) and (max-width: 599px) {
+  /*** Index ***/
+  .backGround {
+    background-image: url("/Imagenes/sin_tacc_background.jpg");
+    background-repeat: no-repeat;
+    margin: 0px;
+    height: 60vh;
+    width: 100%;
+  }
+  .imgDim {
+    width: 75px;
+    height: 75px;
+  }
+  /*** productos ***/
+  .imgProd {
+    width: 150px;
+    height: 150px;
+    border: solid black;
+  }
+  /*** Productos Sin Tacc ***/
+  .imgProd {
+    width: 200px;
+    height: 200px;
+    border: solid black;
+  }
+  /*** Contacto ***/
+  .imgCon {
+    border: solid;
+    background-image: url(https://municipiosanjuan.gob.ar/media/k2/items/cache/fc2062aef352f80dc2215f346ba9ce28_XL.jpg);
+    background-position: center;
+    background-size: auto;
+  }
+  /*** Quienes Somos ***/
+  .imgQs {
+    border: solid;
+    border-radius: 3px;
+    background-image: url(https://http2.mlstatic.com/D_629569-MLA32922359545_112019-O.webp);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: bottom;
+  }
+}
+@media (min-width: 600px) and (max-width: 1199px) {
+  /* Main - Index */
+  .backGround {
+    background-image: url("/Imagenes/sin_tacc_background.jpg");
+    background-repeat: no-repeat;
+    margin: 0px;
+    height: 60vh;
+    width: 100%;
+  }
+  .imgDim {
+    width: 75px;
+    height: 75px;
+  }
+  /*** productos ***/
+  .imgProd {
+    width: 250px;
+    height: 250px;
+    border: solid black;
+  }
+  /*** Productos Sin Tacc ***/
+  .imgProd {
+    width: 300px;
+    height: 300px;
+    border: solid black;
+  }
+  /*** Contacto ***/
+  .imgCon {
+    border: solid;
+    background-image: url(https://municipiosanjuan.gob.ar/media/k2/items/cache/fc2062aef352f80dc2215f346ba9ce28_XL.jpg);
+    background-position: center;
+    background-size: auto;
+  }
+  /*** Quienes Somos ***/
+  .imgQs {
+    border: solid;
+    border-radius: 3px;
+    background-image: url(https://http2.mlstatic.com/D_629569-MLA32922359545_112019-O.webp);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: bottom;
+  }
+}
+@media (min-width: 1200px) {
+  /* Main - Index */
+  .backGround {
+    background-image: url("/Imagenes/sin_tacc_background.jpg");
+    background-repeat: no-repeat;
+    margin: 0px;
+    height: 60vh;
+    width: 100%;
+  }
+  .imgDim {
+    width: 75px;
+    height: 75px;
+  }
+  /*** productos ***/
+  .imgProd {
+    width: 350px;
+    height: 350px;
+    border: solid black;
+  }
+  /*** Productos Sin Tacc ***/
+  .imgProd {
+    width: 300px;
+    height: 300px;
+    border: solid black;
+  }
+  /*** Contacto ***/
+  .imgCon {
+    border: solid;
+    background-image: url(https://municipiosanjuan.gob.ar/media/k2/items/cache/fc2062aef352f80dc2215f346ba9ce28_XL.jpg);
+    background-position: center;
+  }
+  /*** Quienes Somos ***/
+  .imgQs {
+    border: solid;
+    border-radius: 3px;
+    background-image: url(https://http2.mlstatic.com/D_629569-MLA32922359545_112019-O.webp);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: bottom;
+  }
+}
+/** Colores **/
+h1, h2 {
   color: red;
   text-shadow: 3px 3px 3px black;
 }
 
-h3 h4 {
-  color: black;
+h3, h4 {
+  color: red;
+  text-shadow: 3px 3px 3px black;
 }
 
 h5 {
   color: white;
   text-shadow: 2px 2px 2px black;
+}
+
+.textShadowNone {
+  text-shadow: none;
 }
 
 @media (min-width: 360px) and (max-width: 599px) {
@@ -19,14 +349,13 @@ h5 {
     background-color: darkorange;
   }
 }
-/* Reseteo */
-* {
-  font-family: "Source Sans Pro", sans-serif;
-  margin: 0%;
-  padding: 0;
+@media (min-width: 600px) and (max-width: 1199px) {
+  /*** Contacto ***/
+  .backDiv {
+    background-color: darkorange;
+  }
 }
-
-/** Variables **/
+/** Tipografia **/
 @media (min-width: 360px) and (max-width: 599px) {
   h1 {
     font-size: 22px;
@@ -87,7 +416,7 @@ h5 {
     color: whitesmoke;
   }
 }
-/*** Grids Index ***/
+/*** Grids ***/
 @media (min-width: 360px) and (max-width: 599px) {
   .gridHeader {
     display: grid;
@@ -388,24 +717,24 @@ h5 {
   #promociones {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 10%;
+    grid-template-rows: 10%;
     grid-area: promociones;
   }
   #beneficios {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 10%;
+    grid-template-rows: 10%;
     grid-area: beneficios;
   }
   #newLetter {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 15% 15% 15% 15%;
+    grid-template-rows: 15%;
     grid-area: newLetter;
   }
   #grid {
     display: grid;
-    grid-template-areas: "promociones beneficios newLetter" "promociones beneficios newLetter";
+    grid-template-areas: "promociones beneficios newLetter";
     justify-items: center;
     align-items: center;
     background-color: darkred;
@@ -477,6 +806,7 @@ h5 {
     grid-template-rows: 1fr;
   }
 }
+/** Flexbox **/
 @media (min-width: 360px) and (max-width: 599px) {
   /*** Productos Sin Tacc ***/
   .flexPrecio {
@@ -513,321 +843,7 @@ h5 {
     -ms-flex-align: center;
   }
 }
-@media (min-width: 360px) and (max-width: 599px) {
-  /*** General - Header ***/
-  .caja {
-    margin: 0 15px 0 0;
-    width: 100%;
-    height: 100%;
-  }
-  .cajaSub {
-    margin: 10px 0 0 50px;
-  }
-  .sinPunto {
-    list-style-type: none;
-    font-size: 12px;
-  }
-  .borde {
-    border: solid 3px;
-    border-radius: 3px;
-  }
-  /* Main - Index */
-  .boxLi {
-    border: solid black;
-    border-radius: 3px;
-    color: yellowgreen;
-    width: 100px;
-    padding: 10px 0 10px 0;
-    margin: 5px 0 5px 0;
-    text-align: center;
-    font-size: 14px;
-  }
-  .marginNew {
-    margin: 10px;
-  }
-  /*** productos ***/
-  .divM {
-    margin: 10px 0 0 30px;
-  }
-  /*** Productos Sin Tacc ***/
-  .divM {
-    margin: 30px;
-  }
-  .center {
-    text-align: center;
-    padding: 0 0 30px 0;
-  }
-  .marginFlex {
-    margin: 0 0 0 5px;
-  }
-  /*** Contacto ***/
-  .marginNa {
-    margin: 0 0 0 50px;
-  }
-  .marginE {
-    margin: 0 0 0 67px;
-  }
-  .marginC {
-    margin: -18px 0 0 115px;
-  }
-  .marginB {
-    margin: 15px 0 0 50px;
-  }
-}
-@media (min-width: 600px) and (max-width: 1199px) {
-  /*** General - Header ***/
-  .caja {
-    margin: 0 15px 0 0;
-    width: 100%;
-    height: 100%;
-  }
-  .cajaSub {
-    margin: 10px 0 0 50px;
-  }
-  .sinPunto {
-    list-style-type: none;
-    font-size: 12px;
-  }
-  .borde {
-    border: solid 3px;
-    border-radius: 3px;
-  }
-  /* Main - Index */
-  .boxLi {
-    border: solid black;
-    border-radius: 3px;
-    color: yellowgreen;
-    width: 100px;
-    padding: 10px 0 10px 0;
-    text-align: center;
-    font-size: 14px;
-  }
-  .marginNew {
-    margin: 10px;
-  }
-  /*** productos ***/
-  .divM {
-    margin: 10px 0 0 30px;
-  }
-  /*** Productos Sin Tacc ***/
-  .divM {
-    margin: 30px;
-  }
-  .center {
-    text-align: center;
-    padding: 0 0 30px 0;
-  }
-  .marginFlex {
-    margin: 0 0 0 5px;
-  }
-  /*** Contacto ***/
-  .marginNa {
-    margin: 0 0 0 50px;
-  }
-  .marginE {
-    margin: 0 0 0 67px;
-  }
-  .marginC {
-    margin: -18px 0 0 115px;
-  }
-  .marginB {
-    margin: 15px 0 0 50px;
-  }
-  .backDiv {
-    background-color: darkorange;
-  }
-}
-@media (min-width: 1200px) {
-  /*** General - Header ***/
-  .caja {
-    margin: 0 15px 0 0;
-    width: 100%;
-    height: 100%;
-    text-shadow: 2px 2px 2px black;
-  }
-  .cajaSub {
-    margin: 10px 0 0 100px;
-  }
-  .sinPunto {
-    list-style-type: none;
-  }
-  .borde {
-    border: solid 3px;
-    border-radius: 3px;
-  }
-  /* Main - Index */
-  .boxLi {
-    border: solid black;
-    border-radius: 3px;
-    color: yellowgreen;
-    font-style: 1.5rem;
-    width: 150px;
-    padding: 10px 0 10px 0;
-    text-align: center;
-  }
-  .marginNew {
-    margin: 10px;
-  }
-  /*** productos ***/
-  .divM {
-    margin: 10px 0 0 60px;
-  }
-  /*** Productos Sin Tacc ***/
-  .divM {
-    margin: 30px;
-  }
-  .center {
-    text-align: center;
-  }
-  .marginFlex {
-    margin: 0 0 0 5px;
-  }
-  /*** Contacto ***/
-  .marginNa {
-    margin: 0 0 0 50px;
-  }
-  .marginE {
-    margin: 0 0 0 67px;
-  }
-  .marginC {
-    margin: -18px 0 0 116px;
-  }
-  .marginB {
-    margin: 15px 0 0 50px;
-  }
-  /*** Quienes Somos ***/
-  .marginP1 {
-    margin: 45px 0 10px 45px;
-  }
-  .marginP2 {
-    margin: 100px 0 45px 45px;
-  }
-}
-@media (min-width: 360px) and (max-width: 599px) {
-  /*** Index ***/
-  .backGround {
-    background-image: url("/Imagenes/sin_tacc_background.jpg");
-    background-repeat: no-repeat;
-    margin: 0px;
-    height: 60vh;
-    width: 100%;
-  }
-  .imgDim {
-    width: 75px;
-    height: 75px;
-  }
-  /*** productos ***/
-  .imgProd {
-    width: 150px;
-    height: 150px;
-    border: solid black;
-  }
-  /*** Productos Sin Tacc ***/
-  .imgProd {
-    width: 200px;
-    height: 200px;
-    border: solid black;
-  }
-  /*** Contacto ***/
-  .imgCon {
-    border: solid;
-    background-image: url(https://municipiosanjuan.gob.ar/media/k2/items/cache/fc2062aef352f80dc2215f346ba9ce28_XL.jpg);
-    background-position: center;
-    background-size: auto;
-  }
-  /*** Quienes Somos ***/
-  .imgQs {
-    border: solid;
-    border-radius: 3px;
-    background-image: url(https://http2.mlstatic.com/D_629569-MLA32922359545_112019-O.webp);
-    background-repeat: no-repeat;
-    width: 100%;
-    background-position: bottom;
-  }
-}
-@media (min-width: 600px) and (max-width: 1199px) {
-  /* Main - Index */
-  .backGround {
-    background-image: url("/Imagenes/sin_tacc_background.jpg");
-    background-repeat: no-repeat;
-    margin: 0px;
-    height: 60vh;
-    width: 100%;
-  }
-  .imgDim {
-    width: 75px;
-    height: 75px;
-  }
-  /*** productos ***/
-  .imgProd {
-    width: 250px;
-    height: 250px;
-    border: solid black;
-  }
-  /*** Productos Sin Tacc ***/
-  .imgProd {
-    width: 300px;
-    height: 300px;
-    border: solid black;
-  }
-  /*** Contacto ***/
-  .imgCon {
-    border: solid;
-    background-image: url(https://municipiosanjuan.gob.ar/media/k2/items/cache/fc2062aef352f80dc2215f346ba9ce28_XL.jpg);
-    background-position: center;
-    background-size: auto;
-  }
-  /*** Quienes Somos ***/
-  .imgQs {
-    border: solid;
-    border-radius: 3px;
-    background-image: url(https://http2.mlstatic.com/D_629569-MLA32922359545_112019-O.webp);
-    background-repeat: no-repeat;
-    width: 100%;
-    background-position: bottom;
-  }
-}
-@media (min-width: 1200px) {
-  /* Main - Index */
-  .backGround {
-    background-image: url("/Imagenes/sin_tacc_background.jpg");
-    background-repeat: no-repeat;
-    margin: 0px;
-    height: 60vh;
-    width: 100%;
-  }
-  .imgDim {
-    width: 75px;
-    height: 75px;
-  }
-  /*** productos ***/
-  .imgProd {
-    width: 350px;
-    height: 350px;
-    border: solid black;
-  }
-  /*** Productos Sin Tacc ***/
-  .imgProd {
-    width: 300px;
-    height: 300px;
-    border: solid black;
-  }
-  /*** Contacto ***/
-  .imgCon {
-    border: solid;
-    background-image: url(https://municipiosanjuan.gob.ar/media/k2/items/cache/fc2062aef352f80dc2215f346ba9ce28_XL.jpg);
-    background-position: center;
-  }
-  /*** Quienes Somos ***/
-  .imgQs {
-    border: solid;
-    border-radius: 3px;
-    background-image: url(https://http2.mlstatic.com/D_629569-MLA32922359545_112019-O.webp);
-    background-repeat: no-repeat;
-    width: 100%;
-    background-position: bottom;
-  }
-}
+/** Animaciones **/
 @media (min-width: 360px) and (max-width: 599px) {
   /*** Productos Sin Tacc ***/
   .fontRec:hover {
