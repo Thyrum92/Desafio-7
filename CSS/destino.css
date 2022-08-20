@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700&display=swap");
+h1 h2 {
+  color: red;
+  text-shadow: 3px 3px 3px black;
+}
+
+h3 h4 {
+  color: black;
+}
+
+h5 {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+/* Reseteo */
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0%;
+  padding: 0;
+}
+
+/** Variables **/
+@media (min-width: 360px) and (max-width: 599px) {
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  h4 {
+    font-size: 12px;
+  }
+  h5 {
+    font-size: 8px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1199px) {
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  h5 {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+}
+/*** Grids Index ***/
+@media (min-width: 360px) and (max-width: 599px) {
+  .gridHeader {
+    display: grid;
+    grid-template-areas: "logo titulo" "spotify spotify";
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 100px 100px;
+    background-color: darkorange;
+    text-align: center;
+  }
+  #logo {
+    grid-area: logo;
+  }
+  #titulo {
+    grid-area: titulo;
+  }
+  #spotify {
+    grid-area: spotify;
+  }
+  /*** General - Footer ***/
+  .gridFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    align-content: space-around;
+    text-align: center;
+    background: lightgrey;
+    padding: 10px;
+  }
+  .gridDesa {
+    display: grid;
+    background-color: darkred;
+    padding: 5px;
+    border: solid;
+  }
+  /* Main - Index */
+  .gridNav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: darkred;
+    padding: 15px;
+    align-content: space-between;
+    list-style-type: none;
+    justify-items: center;
+  }
+  #promociones {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 10%;
+    grid-area: promociones;
+  }
+  #beneficios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 10%;
+    grid-area: beneficios;
+  }
+  #newLetter {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 15% 15% 15%;
+    grid-area: newLetter;
+  }
+  #grid {
+    display: grid;
+    grid-template-areas: "promociones beneficios" "promociones beneficios" "newLetter newLetter";
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: darkred;
+    border: solid black;
+  }
+  /*** productos ***/
+  #gridProd {
+    display: grid;
+    grid-template-areas: "galeria" "destacados" "publi";
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr 1fr;
+  }
+  #galeria {
+    grid-area: galeria;
+    border: solid black 1.5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  #destacados {
+    grid-area: destacados;
+    border: solid black 1.5px;
+    background-color: lightgrey;
+  }
+  #publi {
+    grid-area: publi;
+    border: solid black 1.5px;
+    background-color: lightgrey;
+  }
+  /*** Productos Sin Tacc ***/
+  #gridSinTacc {
+    display: grid;
+    grid-template-areas: "recetas recetas" "galeria galeria" "destacados destacados" "publi publi";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr 1fr;
+  }
+  #recetas {
+    grid-area: recetas;
+    border: solid black 1.5px;
+    background-color: darkred;
+  }
+  /*** Contacto ***/
+  #gridCon {
+    display: grid;
+    grid-template-areas: "formulario" "destacados" "publi";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 150px 150px;
+  }
+  #gridForm {
+    display: grid;
+    grid-area: formulario;
+    border: solid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  /*** Quienes Somos ***/
+  #gridQs {
+    display: grid;
+    grid-template-areas: "articulos" "destacados" "publi";
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+  }
+  #articulos {
+    display: grid;
+    grid-area: articulos;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media (min-width: 600px) and (max-width: 1199px) {
+  /*** General - Header ***/
+  .gridHeader {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+    grid-template-rows: 100px;
+    background-color: darkorange;
+    justify-content: space-between;
+  }
+  /*** General - Footer ***/
+  .gridFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    align-content: space-around;
+    text-align: center;
+    background: lightgrey;
+    padding: 10px;
+  }
+  .gridDesa {
+    display: grid;
+    background-color: darkred;
+    padding: 5px;
+    border: solid;
+  }
+  /* Main - Index */
+  .gridNav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: darkred;
+    padding: 15px;
+    align-content: space-between;
+    list-style-type: none;
+  }
+  #promociones {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 10%;
+    grid-area: promociones;
+  }
+  #beneficios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 10%;
+    grid-area: beneficios;
+  }
+  #newLetter {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 15% 15% 15%;
+    grid-area: newLetter;
+  }
+  #grid {
+    display: grid;
+    grid-template-areas: "promociones beneficios" "promociones beneficios" "newLetter newLetter";
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: darkred;
+    border: solid black;
+  }
+  /*** productos ***/
+  #gridProd {
+    display: grid;
+    grid-template-areas: "galeria" "destacados" "publi";
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr 1fr;
+  }
+  #galeria {
+    grid-area: galeria;
+    border: solid black 1.5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  #destacados {
+    grid-area: destacados;
+    border: solid black 1.5px;
+    background-color: lightgrey;
+  }
+  #publi {
+    grid-area: publi;
+    border: solid black 1.5px;
+    background-color: lightgrey;
+  }
+  /*** Productos Sin Tacc ***/
+  #gridSinTacc {
+    display: grid;
+    grid-template-areas: "recetas recetas recetas" "galeria galeria galeria" "destacados destacados destacados" "publi publi publi";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr 1fr;
+  }
+  #recetas {
+    grid-area: recetas;
+    border: solid black 1.5px;
+    background-color: darkred;
+  }
+  /*** Contacto ***/
+  #gridCon {
+    display: grid;
+    grid-template-areas: "formulario" "destacados" "publi";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 150px 150px;
+  }
+  #gridForm {
+    display: grid;
+    grid-area: formulario;
+    border: solid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  /*** Quienes Somos ***/
+  #gridQs {
+    display: grid;
+    grid-template-areas: "articulos" "destacados" "publi";
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+  }
+  #articulos {
+    display: grid;
+    grid-area: articulos;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  /*** General - Header ***/
+  .gridHeader {
+    display: grid;
+    grid-template-columns: 95px 450px 1300px;
+    grid-template-rows: 100px;
+    background-color: darkorange;
+    justify-content: space-between;
+  }
+  /*** General - Footer ***/
+  .gridFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    align-content: space-around;
+    text-align: center;
+    background: lightgrey;
+    padding: 10px;
+  }
+  .gridDesa {
+    display: grid;
+    background-color: darkred;
+    padding: 5px;
+    border: solid;
+  }
+  /* Main - Index */
+  .gridNav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: darkred;
+    padding: 15px;
+    align-content: space-between;
+    list-style-type: none;
+  }
+  #promociones {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 10%;
+    grid-area: promociones;
+  }
+  #beneficios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 10%;
+    grid-area: beneficios;
+  }
+  #newLetter {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 15% 15% 15%;
+    grid-area: newLetter;
+  }
+  #grid {
+    display: grid;
+    grid-template-areas: "promociones beneficios newLetter" "promociones beneficios newLetter";
+    justify-items: center;
+    align-items: center;
+    background-color: darkred;
+    color: whitesmoke;
+    text-shadow: 3px 3px 3px black;
+    border: solid black;
+  }
+  /*** productos ***/
+  #gridProd {
+    display: grid;
+    grid-template-areas: "destacados galeria" "destacados galeria" "publi galeria";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  #galeria {
+    grid-area: galeria;
+    border: solid black 1.5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  #destacados {
+    grid-area: destacados;
+    border: solid black 1.5px;
+    background-color: lightgray;
+  }
+  #publi {
+    grid-area: publi;
+    border: solid black 1.5px;
+    background-color: lightgray;
+  }
+  /*** Productos Sin Tacc ***/
+  #gridSinTacc {
+    display: grid;
+    grid-template-areas: "destacados galeria recetas" "destacados galeria recetas" "publi galeria recetas";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+  }
+  #recetas {
+    grid-area: recetas;
+    border: solid black 1.5px;
+    background-color: darkred;
+  }
+  /*** Contacto ***/
+  #gridCon {
+    display: grid;
+    grid-template-areas: "destacados formulario" "publi publi";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  #gridForm {
+    display: grid;
+    grid-area: formulario;
+    border: solid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+  }
+  /*** Quienes Somos ***/
+  #gridQs {
+    display: grid;
+    grid-template-areas: "destacados articulos" "publi publi";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 2fr 1fr;
+  }
+  #articulos {
+    display: grid;
+    grid-area: articulos;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+/*# sourceMappingURL=destino.css.map */
