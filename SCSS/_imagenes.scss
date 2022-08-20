@@ -1,0 +1,158 @@
+$bordeNegro: black;
+@media (min-width: 360px) and (max-width: 599px) {
+
+/*** Index ***/
+   
+.backGround {
+    background-image: url("/Imagenes/sin_tacc_background.jpg");
+    background-repeat: no-repeat;
+    margin: 0px;
+    height: 60vh;
+    width: 100%;
+}
+.imgDim {
+    width: 75px;
+    height: 75px;
+}
+
+/*** productos ***/
+
+.imgProd {
+    width: 150px;
+    height: 150px;
+    border: solid $bordeNegro;
+}
+
+/*** Productos Sin Tacc ***/
+
+.imgProd {
+    width: 200px;
+    height: 200px;
+    border: solid $bordeNegro;
+}
+
+/*** Contacto ***/
+
+.imgCon {
+    border: solid;
+    background-image: url(https://municipiosanjuan.gob.ar/media/k2/items/cache/fc2062aef352f80dc2215f346ba9ce28_XL.jpg);
+    background-position: center;
+    background-size: auto;
+}
+
+/*** Quienes Somos ***/
+
+.imgQs {
+    border: solid;
+    border-radius: 3px;
+    background-image: url(https://http2.mlstatic.com/D_629569-MLA32922359545_112019-O.webp);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: bottom;
+}
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+
+/* Main - Index */
+
+.backGround {
+    background-image: url("/Imagenes/sin_tacc_background.jpg");
+    background-repeat: no-repeat;
+    margin: 0px;
+    height: 60vh;
+    width: 100%;
+}
+
+.imgDim {
+    width: 75px;
+    height: 75px;
+}
+
+/*** productos ***/
+
+.imgProd {
+    width: 250px;
+    height: 250px;
+    border: solid $bordeNegro;
+}
+
+/*** Productos Sin Tacc ***/
+
+.imgProd {
+    width: 300px;
+    height: 300px;
+    border: solid $bordeNegro;
+}
+
+/*** Contacto ***/
+
+.imgCon {
+    border: solid;
+    background-image: url(https://municipiosanjuan.gob.ar/media/k2/items/cache/fc2062aef352f80dc2215f346ba9ce28_XL.jpg);
+    background-position: center;
+    background-size: auto;
+}
+
+/*** Quienes Somos ***/
+
+.imgQs {
+    border: solid;
+    border-radius: 3px;
+    background-image: url(https://http2.mlstatic.com/D_629569-MLA32922359545_112019-O.webp);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: bottom;
+}
+}
+
+@media (min-width: 1200px) {
+
+/* Main - Index */
+
+.backGround {
+    background-image: url("/Imagenes/sin_tacc_background.jpg");
+    background-repeat: no-repeat;
+    margin: 0px;
+    height: 60vh;
+    width: 100%;
+}
+
+.imgDim {
+    width: 75px;
+    height: 75px;
+}
+/*** productos ***/
+
+.imgProd {
+    width: 350px;
+    height: 350px;
+    border: solid $bordeNegro;
+}
+
+/*** Productos Sin Tacc ***/
+
+.imgProd {
+    width: 300px;
+    height: 300px;
+    border: solid $bordeNegro;
+}
+/*** Contacto ***/
+
+.imgCon {
+    border: solid;
+    background-image: url(https://municipiosanjuan.gob.ar/media/k2/items/cache/fc2062aef352f80dc2215f346ba9ce28_XL.jpg);
+    background-position: center;
+}
+
+/*** Quienes Somos ***/
+
+.imgQs {
+    border: solid;
+    border-radius: 3px;
+    background-image: url(https://http2.mlstatic.com/D_629569-MLA32922359545_112019-O.webp);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: bottom;
+}
+}

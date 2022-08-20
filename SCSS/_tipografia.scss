@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700&display=swap');
 /** Variables **/
 $alturaLetra: 22px;
+$colorUno: whitesmoke;
 @media (min-width: 360px) and (max-width: 599px)
 {
 h1 {
@@ -18,6 +19,15 @@ h4 {
 h5 {
     font-size: $alturaLetra - 14px;
 }
+
+.fontProx {
+    color: $colorUno;
+}
+
+.fontRec {
+    color: $colorUno;
+}
+
 }
 @media (min-width: 600px) and (max-width: 1199px) {
     h1 {
@@ -35,6 +45,14 @@ h5 {
     h5 {
         font-size: $alturaLetra - 12px;
     }
+
+    .fontProx {
+        color: $colorUno;
+    }
+    
+    .fontRec {
+        color: $colorUno;
+    }
 }
 @media (min-width: 1200px) {
 
@@ -43,6 +61,13 @@ h5 {
     }
     h4 {
         font-size: $alturaLetra - 6px;
+    }
+    .fontProx {
+        color: $colorUno;
+    }
+    
+    .fontRec {
+        color: $colorUno;
     }
 
 }
