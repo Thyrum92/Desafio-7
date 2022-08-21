@@ -107,8 +107,8 @@ $bordeNegro: black;
     grid-area: galeria;
     border: solid black 1.5px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 #destacados {
     grid-area: destacados;

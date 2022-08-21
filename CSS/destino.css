@@ -56,16 +56,16 @@
   }
   /*** Contacto ***/
   .marginNa {
-    margin: 0 0 0 50px;
+    margin: 5px 0 0 0px;
   }
   .marginE {
-    margin: 0 0 0 67px;
+    margin: 5px 0 0 0px;
   }
   .marginC {
-    margin: -18px 0 0 115px;
+    margin: -15px 0 0 0;
   }
   .marginB {
-    margin: 15px 0 0 50px;
+    margin: 5px 0 0 0px;
   }
 }
 @media (min-width: 600px) and (max-width: 1199px) {
@@ -236,7 +236,7 @@
     border-radius: 3px;
     background-image: url(https://http2.mlstatic.com/D_629569-MLA32922359545_112019-O.webp);
     background-repeat: no-repeat;
-    width: 100%;
+    background-size: auto;
     background-position: bottom;
   }
 }
@@ -378,6 +378,12 @@ h5 {
   .fontRec {
     color: whitesmoke;
   }
+  .letraTitArticle {
+    font-size: 18px;
+  }
+  .letraParrafo {
+    font-size: 16px;
+  }
 }
 @media (min-width: 600px) and (max-width: 1199px) {
   h1 {
@@ -500,8 +506,8 @@ h5 {
     grid-area: galeria;
     border: solid black 1.5px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   }
   #destacados {
     grid-area: destacados;
